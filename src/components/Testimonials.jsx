@@ -2,7 +2,7 @@ import React from "react";
 
 export default function () {
   return (
-    <div className=" flex flex-col items-center rounded-lg p-5 space-y-3 shadow-xl shadow-[#1AA89F]">
+    <div id = "/testimonials" className="lg:max-w-96 flex flex-col items-center rounded-lg p-5 space-y-3 shadow-xl shadow-[#1AA89F]">
       <img
         className="max-w-24 h-24 rounded-full object-cover"
         src="People.jpg"

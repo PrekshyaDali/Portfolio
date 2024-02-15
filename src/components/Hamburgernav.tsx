@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Hamburgernav(props) {
   const handleCloseClick = () => {
@@ -20,7 +21,9 @@ export default function Hamburgernav(props) {
             key={index}
             className="text-white hover:text-pink-400 active:text-blue-300 hover:scale-125 ease-out duration-300"
           >
-            {item.title}
+            <Link to={item.path} spy={true} smooth={true} offset={50}>
+              {item.title}
+            </Link>
           </nav>
         ))}
       </div>

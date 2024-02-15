@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Hamburgernav from "./Hamburgernav";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function () {
   const [hamburgermenu, setHamburgermenu] = useState(false);
@@ -31,7 +31,7 @@ export default function () {
 
   const navItems = [
     { title: "About", path: "/about" },
-    { title: "Resume/CV", path: "/resume" },
+ 
     { title: "Testimonials", path: "/testimonials" },
     { title: "Services", path: "/services" },
     { title: "Contact", path: "/contact" },
@@ -55,9 +55,18 @@ export default function () {
                   key={index}
                   className="hover:text-pink-400 active:text-blue-300 hover:scale-150 ease-in-out duration-300"
                 >
-                  <Link to={item.path}>{item.title}</Link>
+                  <Link to={item.path} spy={true} smooth={true} offset={50}>
+                    {item.title}
+                  </Link>
                 </nav>
               ))}
+              <a
+                className="hover:text-pink-400 active:text-blue-300 hover:scale-150 ease-in-out duration-300"
+                href="PrekshyaDali_resume.pdf"
+                download
+              >
+                Download CV
+              </a>
             </div>
           )}
           {hamburgermenu && (

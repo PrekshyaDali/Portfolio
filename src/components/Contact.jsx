@@ -3,7 +3,10 @@ import Button from "./Button";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col space-y-5 md:flex-row md:space-x-8 md:space-y-0">
+    <div
+      id="/contact"
+      className="flex flex-col space-y-5 lg:flex-row lg:space-x-8 lg:space-y-0"
+    >
       <div className="flex flex-col space-y-5 max-w-3xl">
         <div className="flex justify-center mb-5">
           <h1 className="text-2xl font-semibold ">Contact Me</h1>
@@ -36,27 +39,33 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full ">
+      <div className="flex flex-col w-full text-black ">
         <input
           placeholder="Enter your Name"
-          className="h-12 p-3 border-2 mb-2 rounded-md focus:bg-black "
+          className="h-12 p-3 border-2 mb-2 rounded-md "
           type="text"
         />
         <input
           placeholder="Enter your Email"
-          className="h-12 p-3 border-2 mb-2 rounded-md focus:bg-black "
+          className="h-12 p-3 border-2 mb-2 rounded-md  "
           type="text"
         />
-        <input
+        <textarea
+          className="mb-2 rounded-md p-3 bg-white "
           placeholder="Enter your Subject"
-          className="h-12 p-3 border-2 mb-2 rounded-md  bg-white focus:bg-black"
-          type="text"
-        />
-        <input
+          name="Subject"
+          id=""
+          cols="10"
+          rows="3"
+        ></textarea>
+        <textarea
+          className="mb-2 rounded-md p-3  bg-white "
           placeholder="Enter your Message"
-          className="h-12 p-3 border-2 mb-2 rounded-md  bg-white focus:bg-black"
-          type="text"
-        />
+          name="Message"
+          id=""
+          cols="20"
+          rows="8"
+        ></textarea>
       </div>
       <Button name="Submit"></Button>
     </div>
