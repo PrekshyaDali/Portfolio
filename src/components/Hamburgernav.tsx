@@ -26,6 +26,13 @@ export default function Hamburgernav(props) {
             </Link>
           </nav>
         ))}
+        <a
+          className="hover:text-pink-400 active:text-blue-300 hover:scale-150 ease-in-out duration-300"
+          href="PrekshyaDali_resume.pdf"
+          download
+        >
+          Download CV
+        </a>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export default function Introduction() {
       </div>
       <div className="hidden lg:flex lg:visible lg:top-0 lg:absolute lg:right-5 ">
         <img
-          className="rounded-full lg:max-h-80 xl:max-h-full"
+          className="rounded-full lg:max-h-80 xl:max-h-[400px]"
           src="Designergirl.gif"
           alt=""
         />
