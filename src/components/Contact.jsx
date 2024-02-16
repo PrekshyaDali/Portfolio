@@ -44,7 +44,7 @@ export default function Contact() {
               src="Emaill.png"
               alt=""
             />
-            <span className="">prekshyashrestha@gmail.com</span>
+            <span className="">prekshyashrestha0@gmail.com</span>
           </div>
           <div className="flex space-x-5">
             <img className="h-6 " src="Contact.png" alt="" />
