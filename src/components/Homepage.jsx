@@ -19,7 +19,7 @@ export default function Homepage() {
           <Introduction></Introduction>
         </div>
 
-        <div className="">
+        <div className="mt-10">
           <About></About>
         </div>
 

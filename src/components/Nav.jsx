@@ -3,7 +3,7 @@ import Hamburgernav from "./Hamburgernav";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-export default function () {
+export default function Navbar() {
   const [hamburgermenu, setHamburgermenu] = useState(false);
   const hamburgerRef = useRef(null);
 
@@ -31,7 +31,6 @@ export default function () {
 
   const navItems = [
     { title: "About", path: "/about" },
- 
     { title: "Testimonials", path: "/testimonials" },
     { title: "Services", path: "/services" },
     { title: "Contact", path: "/contact" },
@@ -47,9 +46,9 @@ export default function () {
           alt=""
           ref={hamburgerRef}
         />
-        <div className="flex justify-end hamburger-menu-container">
+        <div className="z-50 flex justify-end hamburger-menu-container fixed top-0 h-16 w-full right-0">
           {!hamburgermenu && (
-            <div className="hidden sm:space-y-0 sm:flex sm:flex-row sm:space-x-12 sm:justify-end">
+            <div className="z-50 bg-[#04112A] hidden sm:space-y-0 sm:flex sm:flex-row sm:space-x-12 sm:justify-end w-full py-4 pr-8">
               {navItems.map((item, index) => (
                 <nav
                   key={index}
